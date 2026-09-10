@@ -104,7 +104,8 @@ nav{position:sticky;top:0;z-index:100;background:rgba(249,246,242,.95);backdrop-
 .to-note{font-family:var(--fm);font-size:.625rem;color:var(--t2);letter-spacing:.08em;line-height:1.6;}
 
 /* NOTABLE ARRIVALS */
-.arrival-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--br);border:1px solid var(--br);}
+.arrival-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--br);border:1px solid var(--br);}
+@media(max-width:900px){.arrival-grid{grid-template-columns:1fr;}}
 .arrival-card{background:var(--bg);padding:2.75rem 2.5rem;}
 .arrival-eyebrow{font-family:var(--fm);font-size:.625rem;color:var(--t3);letter-spacing:.18em;text-transform:uppercase;margin-bottom:.5rem;}
 .arrival-name{font-family:var(--fd);font-size:clamp(2rem,4vw,3.2rem);line-height:.9;margin-bottom:.5rem;color:var(--t);}
